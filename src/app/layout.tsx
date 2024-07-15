@@ -6,25 +6,36 @@ import { SiteFooter } from "@/components/site-footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shadcn-tweet-card.vercel.app"),
-  title: "Uploader",
-  description: "Shadcn uploader & image cropper ui",
-  keywords: [
-    "shadcn",
-    "shadcn uploader",
-    "image cropper ui",
-    "sujjeee",
-    "react cropper",
-  ],
-  authors: [
-    {
-      name: "sujjeee",
-      url: "https://github.com/sujjeee",
-    },
-  ],
+  title: "Beautiful Tweet Card",
+  description: "Beautiful tweet card built with Tailwind CSS",
   creator: "sujjeee",
-  icons: {
-    icon: "/favicon.ico",
+  keywords: [
+    "tweet ui",
+    "tweet card",
+    "tweet card ui",
+    "tailwindcss tweet card",
+    "sujjeee",
+    "tailwind css card",
+  ],
+  openGraph: {
+    title: "Beautiful tweet card built with Tailwind CSS",
+    type: "website",
+    url: "https://tweets-card.vercel.app/",
+    images: [
+      {
+        url: "https://tweets-card.vercel.app/opengraph-image.jpg",
+        alt: "Explore People's First Tweets.",
+      },
+    ],
+  },
+  twitter: {
+    site: "@sujjeee",
+    images: [
+      {
+        url: "https://tweets-card.vercel.app/opengraph-image.jpg",
+        alt: "Beautiful tweet card built with Tailwind CSS",
+      },
+    ],
   },
 }
 
