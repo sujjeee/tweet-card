@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "@/styles/globals.css"
 import { SiteFooter } from "@/components/site-footer"
+import SvgText from "@/components/svg-text"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -47,12 +48,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className=" flex min-h-screen flex-col absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
-          <main className="flex-1 container fixed left-1/2 top-1/2 flex w-screen -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center px-0 ">
-            {children}
-          </main>
-          <SiteFooter />
+        <div className="fixed left-60 top-0 ">
+          <SvgText />
         </div>
+        <div className="fixed left-0 top-0 -z-10  h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]" />
+        {children}
+        <SiteFooter />
       </body>
     </html>
   )

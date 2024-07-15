@@ -84,3 +84,9 @@
   font-family: "Cascadia";
   src: url("https://excalidraw.com/Cascadia.woff2");
 }
+
+body::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
