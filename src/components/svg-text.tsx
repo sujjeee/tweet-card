@@ -1,4 +1,4 @@
-export default function SvgText() {
+export function SvgText() {
   return (
     <svg
       version="1.1"

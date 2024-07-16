@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "@/styles/globals.css"
 import { SiteFooter } from "@/components/site-footer"
-import SvgText from "@/components/svg-text"
+import { SvgText } from "@/components/svg-text"
 
 const inter = Inter({ subsets: ["latin"] })
 
