@@ -6,8 +6,7 @@ interface PageProps {
 }
 
 export default function TweetPage({ params }: PageProps) {
-  console.log({ params })
-  const tweetId = (params.id as string) || "1699772701089689844"
+  const tweetId = (params.id as string) || "1812874506438140090"
 
   return (
     <>
