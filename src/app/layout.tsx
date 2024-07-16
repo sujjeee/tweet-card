@@ -7,8 +7,8 @@ import SvgText from "@/components/svg-text"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Beautiful Tweet Card",
-  description: "Beautiful tweet card built with Tailwind CSS",
+  title: "Minimal Tweet Card",
+  description: "Minimal Tweet Card built with Tailwind CSS",
   creator: "sujjeee",
   keywords: [
     "tweet ui",
@@ -16,16 +16,17 @@ export const metadata: Metadata = {
     "tweet card ui",
     "tailwindcss tweet card",
     "sujjeee",
+    "minimal tweet card",
     "tailwind css card",
   ],
   openGraph: {
-    title: "Beautiful tweet card built with Tailwind CSS",
+    title: "Minimal Tweet Card built with Tailwind CSS",
     type: "website",
-    url: "https://tweets-card.vercel.app/",
+    url: "https://tweetcard.vercel.app/",
     images: [
       {
-        url: "https://tweets-card.vercel.app/opengraph-image.jpg",
-        alt: "Explore People's First Tweets.",
+        url: "https://tweetcard.vercel.app/opengraph-image.png",
+        alt: "Minimal Tweet Card built with Tailwind CSS",
       },
     ],
   },
@@ -33,8 +34,8 @@ export const metadata: Metadata = {
     site: "@sujjeee",
     images: [
       {
-        url: "https://tweets-card.vercel.app/opengraph-image.jpg",
-        alt: "Beautiful tweet card built with Tailwind CSS",
+        url: "https://tweetcard.vercel.app/opengraph-image.png",
+        alt: "Minimal Tweet Card built with Tailwind CSS",
       },
     ],
   },
