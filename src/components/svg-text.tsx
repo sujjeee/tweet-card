@@ -56,7 +56,7 @@ export default function SvgText() {
           direction="ltr"
           dominantBaseline="alphabetic"
         >
-          put your tweetId (e.g. /1706525655901647157)
+          put your tweetId (e.g. /1812874506438140090)
         </text>
       </g>
     </svg>

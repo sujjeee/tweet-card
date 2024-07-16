@@ -7,6 +7,7 @@ import SvgText from "@/components/svg-text"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://tweetcard.vercel.app"),
   title: "Minimal Tweet Card",
   description: "Minimal Tweet Card built with Tailwind CSS",
   creator: "sujjeee",

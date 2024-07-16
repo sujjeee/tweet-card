@@ -46,7 +46,7 @@ export async function TweetCard(props: TweetCardProps) {
               <div className="overflow-hidden whitespace-nowrap truncate">
                 {tweet.user.name}
               </div>
-              {tweet.user.is_blue_verified && (
+              {(tweet.user.is_blue_verified || tweet.user.verified) && (
                 <Icons.verified className="w-4 ml-0.5 text-[rgb(27,149,224)] fill-[currentcolor] shrink-0" />
               )}
             </div>
