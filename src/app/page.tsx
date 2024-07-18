@@ -1,6 +1,7 @@
 import { TweetCard } from "@/components/tweet-card"
 import { Skeleton } from "@/components/ui/skeleton"
 import React from "react"
+import { getTweet } from "react-tweet/api"
 
 export default function Page() {
   const tweets = [
@@ -19,16 +20,18 @@ export default function Page() {
     "1812956468137902295",
   ]
 
+  const tweetPromises = tweets.map((id) => getTweet(id))
+
   return (
     <>
       <section className="p-2.5 pt-10 sm:container sm:max-w-screen-lg flex items-center justify-center">
         <div className="list-none space-y-2 py-8 sm:block sm:columns-2 sm:gap-2 lg:columns-3 pb-28">
-          {tweets.map((id, idx) => (
+          {tweetPromises.map((promise, idx) => (
             <React.Suspense
               key={idx}
               fallback={<Skeleton className="size-[500px]" />}
             >
-              <TweetCard tweetId={id} />
+              <TweetCard tweetPromise={promise} />
             </React.Suspense>
           ))}
         </div>
