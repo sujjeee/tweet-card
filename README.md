@@ -1,8 +1,8 @@
+## Tweet Card component built with [React Tweet](https://react-tweet.vercel.app/) and [TailwindCSS](https://tailwindcss.com/).
+
 <a href="https://tweetcard.vercel.app/" target="_blank">
   <img src="https://tweetcard.vercel.app/opengraph-image.png" alt="Minimal Tweet Card" />
 </a>
-
-Minimal Tweet Card built with [TailwindCSS](https://tailwindcss.com/).
 
 ## Props
 
