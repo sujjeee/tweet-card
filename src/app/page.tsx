@@ -1,6 +1,6 @@
+import React from "react"
 import { TweetCard } from "@/components/tweet-card"
 import { Skeleton } from "@/components/ui/skeleton"
-import React from "react"
 import { getTweet } from "react-tweet/api"
 
 export default function Page() {
@@ -13,7 +13,7 @@ export default function Page() {
     "1699097578548363266",
     "1810714237146214785",
     "1812887016503210271",
-    "1777603210363928878",
+    "1831758150065922401",
     "1811260876697358554",
     "1779963510946144268",
     "1812885890382929956",
